@@ -1,0 +1,80 @@
+package bcp.edp.avrotest.model.db2;
+
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@NoArgsConstructor
+@Data
+public class DdaImage {
+
+    public int HDDA_KEY_COMP;
+    public int HDDA_KEY_CONTA;
+    public String HDDA_KEY_DATA_LANCAMENTO;
+    public String HDDA_KEY_ORIGEM;
+    public String HDDA_KEY_DATA_HORA;
+    public String HDDA_HST_REVERSAL;
+    public int HDDA_HST_CURR_DG;
+    public String HDDA_HST_SUBPRD;
+    public int HDDA_HST_TRAN_SIGN;
+    public String HDDA_HST_TRAN_TYPE;
+    public String HDDA_HST_GLI_SOURCE;
+    public int HDDA_HST_FUNC_ID;
+    public int HDDA_HST_SOURCE_TYPE;
+    public int HDDA_HST_ENVIRONMENT;
+    public String HDDA_HST_EFF_DATE;
+    public int HDDA_HST_TRAN_COD_REVERS;
+    public String HDDA_HST_DEP_WD;
+    public String HDDA_HST_TAMT;
+    public int HDDA_HST_BRANCH;
+    public int HDDA_HST_TRANS_SEQ;
+    public String HDDA_HST_PAID_INTO_OD;
+    public String HDDA_HST_LEDG_BAL_AFP;
+    public String HDDA_HST_COLL_BAL_AFP;
+    public int HDDA_HST_TRANS_NO;
+    public int HDDA_HST_TCK_SERIAL_NO;
+    public String HDDA_HST_TRACE_ID;
+    public String HDDA_HST_CASH_AMT;
+    public String HDDA_HST_INTERN_GEN;
+    public int HDDA_HST_HORA;
+    public String HDDA_HST_DATA_SISTEMA;
+    public String HDDA_HST_SOURCE;
+    public String HDDA_HST_OPER;
+    public String HDDA_HST_DESCR;
+    public int HDDA_HST_ACT_NO_TO;
+    public int HDDA_HST_ACT_NO_FROM;
+    public String HDDA_HST_VAMT_FLOAT_0;
+    public int HDDA_HST_VDAY_FLOAT_0;
+    public String HDDA_HST_VAMT_FLOAT_1;
+    public int HDDA_HST_VDAY_FLOAT_1;
+    public String HDDA_HST_VAMT_FLOAT_2;
+    public int HDDA_HST_VDAY_FLOAT_2;
+    public String HDDA_HST_VAMT_FLOAT_3;
+    public int HDDA_HST_VDAY_FLOAT_3;
+    public String HDDA_HST_TRACE_ID_CONT;
+    public String HDDA_HST_INPUT_MOEDA;
+    public String HDDA_HST_ORIG_MOEDA;
+    public String HDDA_HST_ORIG_CURR_TAMT;
+    public int HDDA_HST_ORIG_BRANCH;
+    public String HDDA_HST_STMT_REVERS_CODE;
+    public String HDDA_HST_LIM_TOL_USADO;
+    public String HDDA_HST_CANAL;
+    public int HDDA_HST_ID_PRIORIT;
+    public String HDDA_HST_CANAL2;
+    public String HDDA_HST_TRATADO;
+    public String HDDA_HST_AVAILABLE_BALANCE;
+    public String HDDA_HST_ADJ_BAL;
+    public String HDDA_HST_COLL_BAL;
+    public String HDDA_HST_SALDO_AUTORIZADO;
+    public String HDDA_HST_SLD_DISP_BD;
+    public String HDDA_HST_LINE_AMT;
+    public String HDDA_HST_MEMO_DR;
+    public String HDDA_HST_MEMO_CR;
+    public String HDDA_HST_CATIVOS_DEBITO;
+    public String HDDA_HST_CATIVOS_CREDITO;
+    public String HDDA_HST_SLD_DISP_LCA;
+    public String HDDA_HST_INVESTMENT_BAL;
+    public String HDDA_HST_AVAIL_LOC;
+    public String HDDA_HST_SSV_LIM_AUTORIZ;
+    public String HDDA_HST_SLD_CONTAB;
+    public String HDDA_HST_DESCR_CONT;
+}

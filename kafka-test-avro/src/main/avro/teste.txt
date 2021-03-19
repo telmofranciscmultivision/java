@@ -1,0 +1,48 @@
+{
+  "type": "record",
+  "name": "HMV_DDA",
+  "namespace": "key.SOURCEDB.DEP000PA.DEPPA",
+  "fields": [
+    {
+      "name": "HDDA_KEY_CONTA",
+      "type": {
+        "type": "long",
+        "logicalType": "DECIMAL",
+        "dbColumnName": "HDDA_KEY_CONTA",
+        "precision": 15,
+        "scale": 0
+      },
+      "default": 0
+    },
+    {
+      "name": "HDDA_KEY_DATA_LANCAMENTO",
+      "type": {
+        "type": "string",
+        "logicalType": "DATE",
+        "dbColumnName": "HDDA_KEY_DATA_LANCAMENTO",
+        "length": 10
+      },
+      "default": ""
+    },
+    {
+      "name": "HDDA_KEY_ORIGEM",
+      "type": {
+        "type": "string",
+        "logicalType": "CHARACTER",
+        "dbColumnName": "HDDA_KEY_ORIGEM",
+        "length": 1
+      },
+      "default": ""
+    },
+    {
+      "name": "HDDA_KEY_DATA_HORA",
+      "type": {
+        "type": "string",
+        "logicalType": "TIMESTAMP",
+        "dbColumnName": "HDDA_KEY_DATA_HORA",
+        "length": 26
+      },
+      "default": ""
+    }
+  ]
+}

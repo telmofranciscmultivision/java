@@ -1,0 +1,843 @@
+{
+  "type": "record",
+  "name": "AuditRecord",
+  "namespace": "EdpSimulator.Entities",
+  "fields": [
+    {
+      "name": "beforeImage",
+      "type": [
+        "null",
+        {
+          "type": "record",
+          "name": "HMV_DDA",
+          "namespace": "value.SOURCEDB.DEP000PA.DEPPA",
+          "fields": [
+            {
+              "name": "HDDA_KEY_COMP",
+              "type": {
+                "type": "int",
+                "logicalType": "DECIMAL",
+                "dbColumnName": "HDDA_KEY_COMP",
+                "precision": 5,
+                "scale": 0
+              },
+              "default": 0
+            },
+            {
+              "name": "HDDA_KEY_CONTA",
+              "type": {
+                "type": "long",
+                "logicalType": "DECIMAL",
+                "dbColumnName": "HDDA_KEY_CONTA",
+                "precision": 15,
+                "scale": 0
+              },
+              "default": 0
+            },
+            {
+              "name": "HDDA_KEY_DATA_LANCAMENTO",
+              "type": {
+                "type": "string",
+                "logicalType": "DATE",
+                "dbColumnName": "HDDA_KEY_DATA_LANCAMENTO",
+                "length": 10
+              },
+              "default": ""
+            },
+            {
+              "name": "HDDA_KEY_ORIGEM",
+              "type": {
+                "type": "string",
+                "logicalType": "CHARACTER",
+                "dbColumnName": "HDDA_KEY_ORIGEM",
+                "length": 1
+              },
+              "default": ""
+            },
+            {
+              "name": "HDDA_KEY_DATA_HORA",
+              "type": {
+                "type": "string",
+                "logicalType": "TIMESTAMP",
+                "dbColumnName": "HDDA_KEY_DATA_HORA",
+                "length": 26
+              },
+              "default": ""
+            },
+            {
+              "name": "HDDA_HST_REVERSAL",
+              "type": {
+                "type": "string",
+                "logicalType": "CHARACTER",
+                "dbColumnName": "HDDA_HST_REVERSAL",
+                "length": 1
+              },
+              "default": ""
+            },
+            {
+              "name": "HDDA_HST_STMT_REVERS",
+              "type": {
+                "type": "string",
+                "logicalType": "CHARACTER",
+                "dbColumnName": "HDDA_HST_STMT_REVERS",
+                "length": 1
+              },
+              "default": ""
+            },
+            {
+              "name": "HDDA_HST_CURR_DG",
+              "type": {
+                "type": "int",
+                "logicalType": "DECIMAL",
+                "dbColumnName": "HDDA_HST_CURR_DG",
+                "precision": 5,
+                "scale": 0
+              },
+              "default": 0
+            },
+            {
+              "name": "HDDA_HST_SUBPRD",
+              "type": {
+                "type": "string",
+                "logicalType": "CHARACTER",
+                "dbColumnName": "HDDA_HST_SUBPRD",
+                "length": 2
+              },
+              "default": ""
+            },
+            {
+              "name": "HDDA_HST_TRAN_SIGN",
+              "type": {
+                "type": "int",
+                "logicalType": "DECIMAL",
+                "dbColumnName": "HDDA_HST_TRAN_SIGN",
+                "precision": 1,
+                "scale": 0
+              },
+              "default": 0
+            },
+            {
+              "name": "HDDA_HST_TRAN_TYPE",
+              "type": {
+                "type": "string",
+                "logicalType": "CHARACTER",
+                "dbColumnName": "HDDA_HST_TRAN_TYPE",
+                "length": 1
+              },
+              "default": ""
+            },
+            {
+              "name": "HDDA_HST_GLI_SOURCE",
+              "type": {
+                "type": "string",
+                "logicalType": "CHARACTER",
+                "dbColumnName": "HDDA_HST_GLI_SOURCE",
+                "length": 1
+              },
+              "default": ""
+            },
+            {
+              "name": "HDDA_HST_FUNC_ID",
+              "type": {
+                "type": "int",
+                "logicalType": "DECIMAL",
+                "dbColumnName": "HDDA_HST_FUNC_ID",
+                "precision": 5,
+                "scale": 0
+              },
+              "default": 0
+            },
+            {
+              "name": "HDDA_HST_SOURCE_TYPE",
+              "type": {
+                "type": "int",
+                "logicalType": "DECIMAL",
+                "dbColumnName": "HDDA_HST_SOURCE_TYPE",
+                "precision": 5,
+                "scale": 0
+              },
+              "default": 0
+            },
+            {
+              "name": "HDDA_HST_ENVIRONMENT",
+              "type": {
+                "type": "int",
+                "logicalType": "DECIMAL",
+                "dbColumnName": "HDDA_HST_ENVIRONMENT",
+                "precision": 5,
+                "scale": 0
+              },
+              "default": 0
+            },
+            {
+              "name": "HDDA_HST_EFF_DATE",
+              "type": {
+                "type": "string",
+                "logicalType": "DATE",
+                "dbColumnName": "HDDA_HST_EFF_DATE",
+                "length": 10
+              },
+              "default": ""
+            },
+            {
+              "name": "HDDA_HST_TRAN_COD_REVERS",
+              "type": {
+                "type": "int",
+                "logicalType": "DECIMAL",
+                "dbColumnName": "HDDA_HST_TRAN_COD_REVERS",
+                "precision": 5,
+                "scale": 0
+              },
+              "default": 0
+            },
+            {
+              "name": "HDDA_HST_DEP_WD",
+              "type": {
+                "type": "string",
+                "logicalType": "CHARACTER",
+                "dbColumnName": "HDDA_HST_DEP_WD",
+                "length": 1
+              },
+              "default": ""
+            },
+            {
+              "name": "HDDA_HST_TAMT",
+              "type": {
+                "type": "string",
+                "logicalType": "DECIMAL",
+                "dbColumnName": "HDDA_HST_TAMT",
+                "precision": 13,
+                "scale": 2
+              },
+              "default": "0"
+            },
+            {
+              "name": "HDDA_HST_BRANCH",
+              "type": {
+                "type": "int",
+                "logicalType": "DECIMAL",
+                "dbColumnName": "HDDA_HST_BRANCH",
+                "precision": 5,
+                "scale": 0
+              },
+              "default": 0
+            },
+            {
+              "name": "HDDA_HST_TRANS_SEQ",
+              "type": {
+                "type": "int",
+                "logicalType": "DECIMAL",
+                "dbColumnName": "HDDA_HST_TRANS_SEQ",
+                "precision": 7,
+                "scale": 0
+              },
+              "default": 0
+            },
+            {
+              "name": "HDDA_HST_PAID_INTO_OD",
+              "type": {
+                "type": "string",
+                "logicalType": "CHARACTER",
+                "dbColumnName": "HDDA_HST_PAID_INTO_OD",
+                "length": 1
+              },
+              "default": ""
+            },
+            {
+              "name": "HDDA_HST_LEDG_BAL_AFP",
+              "type": {
+                "type": "string",
+                "logicalType": "DECIMAL",
+                "dbColumnName": "HDDA_HST_LEDG_BAL_AFP",
+                "precision": 13,
+                "scale": 2
+              },
+              "default": "0"
+            },
+            {
+              "name": "HDDA_HST_COLL_BAL_AFP",
+              "type": {
+                "type": "string",
+                "logicalType": "DECIMAL",
+                "dbColumnName": "HDDA_HST_COLL_BAL_AFP",
+                "precision": 13,
+                "scale": 2
+              },
+              "default": "0"
+            },
+            {
+              "name": "HDDA_HST_TRANS_NO",
+              "type": {
+                "type": "long",
+                "logicalType": "DECIMAL",
+                "dbColumnName": "HDDA_HST_TRANS_NO",
+                "precision": 11,
+                "scale": 0
+              },
+              "default": 0
+            },
+            {
+              "name": "HDDA_HST_TCK_SERIAL_NO",
+              "type": {
+                "type": "long",
+                "logicalType": "DECIMAL",
+                "dbColumnName": "HDDA_HST_TCK_SERIAL_NO",
+                "precision": 11,
+                "scale": 0
+              },
+              "default": 0
+            },
+            {
+              "name": "HDDA_HST_TRACE_ID",
+              "type": {
+                "type": "string",
+                "logicalType": "CHARACTER",
+                "dbColumnName": "HDDA_HST_TRACE_ID",
+                "length": 20
+              },
+              "default": ""
+            },
+            {
+              "name": "HDDA_HST_CASH_AMT",
+              "type": {
+                "type": "string",
+                "logicalType": "DECIMAL",
+                "dbColumnName": "HDDA_HST_CASH_AMT",
+                "precision": 13,
+                "scale": 2
+              },
+              "default": "0"
+            },
+            {
+              "name": "HDDA_HST_INTERN_GEN",
+              "type": {
+                "type": "string",
+                "logicalType": "CHARACTER",
+                "dbColumnName": "HDDA_HST_INTERN_GEN",
+                "length": 1
+              },
+              "default": ""
+            },
+            {
+              "name": "HDDA_HST_HORA",
+              "type": {
+                "type": "int",
+                "logicalType": "DECIMAL",
+                "dbColumnName": "HDDA_HST_HORA",
+                "precision": 7,
+                "scale": 0
+              },
+              "default": 0
+            },
+            {
+              "name": "HDDA_HST_DATA_SISTEMA",
+              "type": {
+                "type": "string",
+                "logicalType": "CHARACTER",
+                "dbColumnName": "HDDA_HST_DATA_SISTEMA",
+                "length": 10
+              },
+              "default": ""
+            },
+            {
+              "name": "HDDA_HST_SOURCE",
+              "type": {
+                "type": "string",
+                "logicalType": "CHARACTER",
+                "dbColumnName": "HDDA_HST_SOURCE",
+                "length": 8
+              },
+              "default": ""
+            },
+            {
+              "name": "HDDA_HST_OPER",
+              "type": {
+                "type": "string",
+                "logicalType": "CHARACTER",
+                "dbColumnName": "HDDA_HST_OPER",
+                "length": 20
+              },
+              "default": ""
+            },
+            {
+              "name": "HDDA_HST_DESCR",
+              "type": {
+                "type": "string",
+                "logicalType": "CHARACTER",
+                "dbColumnName": "HDDA_HST_DESCR",
+                "length": 47
+              },
+              "default": ""
+            },
+            {
+              "name": "HDDA_HST_ACT_NO_TO",
+              "type": {
+                "type": "long",
+                "logicalType": "DECIMAL",
+                "dbColumnName": "HDDA_HST_ACT_NO_TO",
+                "precision": 15,
+                "scale": 0
+              },
+              "default": 0
+            },
+            {
+              "name": "HDDA_HST_ACT_NO_FROM",
+              "type": {
+                "type": "long",
+                "logicalType": "DECIMAL",
+                "dbColumnName": "HDDA_HST_ACT_NO_FROM",
+                "precision": 15,
+                "scale": 0
+              },
+              "default": 0
+            },
+            {
+              "name": "HDDA_HST_VAMT_FLOAT_0",
+              "type": {
+                "type": "string",
+                "logicalType": "DECIMAL",
+                "dbColumnName": "HDDA_HST_VAMT_FLOAT_0",
+                "precision": 13,
+                "scale": 2
+              },
+              "default": "0"
+            },
+            {
+              "name": "HDDA_HST_VDAY_FLOAT_0",
+              "type": {
+                "type": "long",
+                "logicalType": "DECIMAL",
+                "dbColumnName": "HDDA_HST_VDAY_FLOAT_0",
+                "precision": 13,
+                "scale": 0
+              },
+              "default": 0
+            },
+            {
+              "name": "HDDA_HST_VAMT_FLOAT_1",
+              "type": {
+                "type": "string",
+                "logicalType": "DECIMAL",
+                "dbColumnName": "HDDA_HST_VAMT_FLOAT_1",
+                "precision": 13,
+                "scale": 2
+              },
+              "default": "0"
+            },
+            {
+              "name": "HDDA_HST_VDAY_FLOAT_1",
+              "type": {
+                "type": "long",
+                "logicalType": "DECIMAL",
+                "dbColumnName": "HDDA_HST_VDAY_FLOAT_1",
+                "precision": 13,
+                "scale": 0
+              },
+              "default": 0
+            },
+            {
+              "name": "HDDA_HST_VAMT_FLOAT_2",
+              "type": {
+                "type": "string",
+                "logicalType": "DECIMAL",
+                "dbColumnName": "HDDA_HST_VAMT_FLOAT_2",
+                "precision": 13,
+                "scale": 2
+              },
+              "default": "0"
+            },
+            {
+              "name": "HDDA_HST_VDAY_FLOAT_2",
+              "type": {
+                "type": "long",
+                "logicalType": "DECIMAL",
+                "dbColumnName": "HDDA_HST_VDAY_FLOAT_2",
+                "precision": 13,
+                "scale": 0
+              },
+              "default": 0
+            },
+            {
+              "name": "HDDA_HST_VAMT_FLOAT_3",
+              "type": {
+                "type": "string",
+                "logicalType": "DECIMAL",
+                "dbColumnName": "HDDA_HST_VAMT_FLOAT_3",
+                "precision": 13,
+                "scale": 2
+              },
+              "default": "0"
+            },
+            {
+              "name": "HDDA_HST_VDAY_FLOAT_3",
+              "type": {
+                "type": "long",
+                "logicalType": "DECIMAL",
+                "dbColumnName": "HDDA_HST_VDAY_FLOAT_3",
+                "precision": 13,
+                "scale": 0
+              },
+              "default": 0
+            },
+            {
+              "name": "HDDA_HST_TRACE_ID_CONT",
+              "type": {
+                "type": "string",
+                "logicalType": "CHARACTER",
+                "dbColumnName": "HDDA_HST_TRACE_ID_CONT",
+                "length": 10
+              },
+              "default": ""
+            },
+            {
+              "name": "HDDA_HST_INPUT_MOEDA",
+              "type": {
+                "type": "string",
+                "logicalType": "CHARACTER",
+                "dbColumnName": "HDDA_HST_INPUT_MOEDA",
+                "length": 3
+              },
+              "default": ""
+            },
+            {
+              "name": "HDDA_HST_ORIG_MOEDA",
+              "type": {
+                "type": "string",
+                "logicalType": "CHARACTER",
+                "dbColumnName": "HDDA_HST_ORIG_MOEDA",
+                "length": 3
+              },
+              "default": ""
+            },
+            {
+              "name": "HDDA_HST_ORIG_CURR_TAMT",
+              "type": {
+                "type": "string",
+                "logicalType": "DECIMAL",
+                "dbColumnName": "HDDA_HST_ORIG_CURR_TAMT",
+                "precision": 13,
+                "scale": 2
+              },
+              "default": "0"
+            },
+            {
+              "name": "HDDA_HST_ORIG_BRANCH",
+              "type": {
+                "type": "int",
+                "logicalType": "DECIMAL",
+                "dbColumnName": "HDDA_HST_ORIG_BRANCH",
+                "precision": 5,
+                "scale": 0
+              },
+              "default": 0
+            },
+            {
+              "name": "HDDA_HST_STMT_REVERS_CODE",
+              "type": {
+                "type": "string",
+                "logicalType": "CHARACTER",
+                "dbColumnName": "HDDA_HST_STMT_REVERS_CODE",
+                "length": 1
+              },
+              "default": ""
+            },
+            {
+              "name": "HDDA_HST_LIM_TOL_USADO",
+              "type": {
+                "type": "string",
+                "logicalType": "DECIMAL",
+                "dbColumnName": "HDDA_HST_LIM_TOL_USADO",
+                "precision": 11,
+                "scale": 2
+              },
+              "default": "0"
+            },
+            {
+              "name": "HDDA_HST_CANAL",
+              "type": {
+                "type": "string",
+                "logicalType": "CHARACTER",
+                "dbColumnName": "HDDA_HST_CANAL",
+                "length": 4
+              },
+              "default": ""
+            },
+            {
+              "name": "HDDA_HST_ID_PRIORIT",
+              "type": {
+                "type": "int",
+                "logicalType": "DECIMAL",
+                "dbColumnName": "HDDA_HST_ID_PRIORIT",
+                "precision": 5,
+                "scale": 0
+              },
+              "default": 0
+            },
+            {
+              "name": "HDDA_HST_CANAL2",
+              "type": {
+                "type": "string",
+                "logicalType": "CHARACTER",
+                "dbColumnName": "HDDA_HST_CANAL2",
+                "length": 4
+              },
+              "default": ""
+            },
+            {
+              "name": "HDDA_HST_TRATADO",
+              "type": {
+                "type": "string",
+                "logicalType": "CHARACTER",
+                "dbColumnName": "HDDA_HST_TRATADO",
+                "length": 1
+              },
+              "default": ""
+            },
+            {
+              "name": "HDDA_HST_AVAILABLE_BALANCE",
+              "type": {
+                "type": "string",
+                "logicalType": "DECIMAL",
+                "dbColumnName": "HDDA_HST_AVAILABLE_BALANCE",
+                "precision": 13,
+                "scale": 2
+              },
+              "default": "0"
+            },
+            {
+              "name": "HDDA_HST_ADJ_BAL",
+              "type": {
+                "type": "string",
+                "logicalType": "DECIMAL",
+                "dbColumnName": "HDDA_HST_ADJ_BAL",
+                "precision": 13,
+                "scale": 2
+              },
+              "default": "0"
+            },
+            {
+              "name": "HDDA_HST_COLL_BAL",
+              "type": {
+                "type": "string",
+                "logicalType": "DECIMAL",
+                "dbColumnName": "HDDA_HST_COLL_BAL",
+                "precision": 13,
+                "scale": 2
+              },
+              "default": "0"
+            },
+            {
+              "name": "HDDA_HST_SALDO_AUTORIZADO",
+              "type": {
+                "type": "string",
+                "logicalType": "DECIMAL",
+                "dbColumnName": "HDDA_HST_SALDO_AUTORIZADO",
+                "precision": 13,
+                "scale": 2
+              },
+              "default": "0"
+            },
+            {
+              "name": "HDDA_HST_SLD_DISP_BD",
+              "type": {
+                "type": "string",
+                "logicalType": "DECIMAL",
+                "dbColumnName": "HDDA_HST_SLD_DISP_BD",
+                "precision": 13,
+                "scale": 2
+              },
+              "default": "0"
+            },
+            {
+              "name": "HDDA_HST_LINE_AMT",
+              "type": {
+                "type": "string",
+                "logicalType": "DECIMAL",
+                "dbColumnName": "HDDA_HST_LINE_AMT",
+                "precision": 13,
+                "scale": 2
+              },
+              "default": "0"
+            },
+            {
+              "name": "HDDA_HST_MEMO_DR",
+              "type": {
+                "type": "string",
+                "logicalType": "DECIMAL",
+                "dbColumnName": "HDDA_HST_MEMO_DR",
+                "precision": 13,
+                "scale": 2
+              },
+              "default": "0"
+            },
+            {
+              "name": "HDDA_HST_MEMO_CR",
+              "type": {
+                "type": "string",
+                "logicalType": "DECIMAL",
+                "dbColumnName": "HDDA_HST_MEMO_CR",
+                "precision": 13,
+                "scale": 2
+              },
+              "default": "0"
+            },
+            {
+              "name": "HDDA_HST_CATIVOS_DEBITO",
+              "type": {
+                "type": "string",
+                "logicalType": "DECIMAL",
+                "dbColumnName": "HDDA_HST_CATIVOS_DEBITO",
+                "precision": 13,
+                "scale": 2
+              },
+              "default": "0"
+            },
+            {
+              "name": "HDDA_HST_CATIVOS_CREDITO",
+              "type": {
+                "type": "string",
+                "logicalType": "DECIMAL",
+                "dbColumnName": "HDDA_HST_CATIVOS_CREDITO",
+                "precision": 13,
+                "scale": 2
+              },
+              "default": "0"
+            },
+            {
+              "name": "HDDA_HST_SLD_DISP_LCA",
+              "type": {
+                "type": "string",
+                "logicalType": "DECIMAL",
+                "dbColumnName": "HDDA_HST_SLD_DISP_LCA",
+                "precision": 13,
+                "scale": 2
+              },
+              "default": "0"
+            },
+            {
+              "name": "HDDA_HST_INVESTMENT_BAL",
+              "type": {
+                "type": "string",
+                "logicalType": "DECIMAL",
+                "dbColumnName": "HDDA_HST_INVESTMENT_BAL",
+                "precision": 13,
+                "scale": 2
+              },
+              "default": "0"
+            },
+            {
+              "name": "HDDA_HST_AVAIL_LOC",
+              "type": {
+                "type": "string",
+                "logicalType": "DECIMAL",
+                "dbColumnName": "HDDA_HST_AVAIL_LOC",
+                "precision": 13,
+                "scale": 2
+              },
+              "default": "0"
+            },
+            {
+              "name": "HDDA_HST_SSV_LIM_AUTORIZ",
+              "type": {
+                "type": "string",
+                "logicalType": "DECIMAL",
+                "dbColumnName": "HDDA_HST_SSV_LIM_AUTORIZ",
+                "precision": 13,
+                "scale": 2
+              },
+              "default": "0"
+            },
+            {
+              "name": "HDDA_HST_SLD_CONTAB",
+              "type": {
+                "type": "string",
+                "logicalType": "DECIMAL",
+                "dbColumnName": "HDDA_HST_SLD_CONTAB",
+                "precision": 13,
+                "scale": 2
+              },
+              "default": "0"
+            },
+            {
+              "name": "HDDA_HST_DESCR_CONT",
+              "type": {
+                "type": "string",
+                "logicalType": "CHARACTER",
+                "dbColumnName": "HDDA_HST_DESCR_CONT",
+                "length": 53
+              },
+              "default": ""
+            },
+            {
+              "name": "HDDA_HST_CATEG",
+              "type": {
+                "type": "int",
+                "logicalType": "DECIMAL",
+                "dbColumnName": "HDDA_HST_CATEG",
+                "precision": 3,
+                "scale": 0
+              },
+              "default": 0
+            },
+            {
+              "name": "HDDA_SEQ_ID",
+              "type": {
+                "type": "long",
+                "logicalType": "BIGINT",
+                "dbColumnName": "HDDA_SEQ_ID"
+              },
+              "default": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "afterImage",
+      "type": [
+        "null",
+        "value.SOURCEDB.DEP000PA.DEPPA.HMV_DDA"
+      ]
+    },
+    {
+      "name": "A_ENTTYP",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "A_CCID",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "A_TIMSTAMP",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "eventId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "eventKcopTimestamp",
+      "type": [
+        "null",
+        "long"
+      ],
+      "default": null
+    }
+  ]
+}
